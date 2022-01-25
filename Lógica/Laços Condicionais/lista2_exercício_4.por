@@ -1,34 +1,35 @@
+/*
+ * 4) Faça um sistema que leia um número inteiro e mostre uma mensagem indicando se este
+número é par ou ímpar, e se é positivo ou negativo.
+ */
+
+
 programa
 {
-	inclua biblioteca Matematica--> mat
 	
 	funcao inicio()
 	{
-		real A,B,C,D,pot1, pot2,pot3,pot4
-		
-		escreva("\nInpute um número inteiro, positivo ou negativo:")
-		leia(A)
-		escreva("\nInpute um número inteiro, positivo ou negativo:")
-		leia(B)
-		escreva("\nInpute um número inteiro, positivo ou negativo:")
-		leia(C)
-		escreva("\nInpute um número inteiro, positivo ou negativo:")
-		leia(D)
-		
-		A=mat.potencia(A, 2)
-		B=mat.potencia(B, 2)
-		C=mat.potencia(C, 2)
-		D=mat.potencia(D, 2)
-		
-		se(C>=1000)
+		inteiro n1
+
+		escreva("Digite um número aqui, rapidão :")
+		leia(n1)
+
+		se (n1%2==0)
 		{
-			escreva("\n",C)
+			escreva("\n O número "+n1+" é par")
 		}
 		senao
-		{	escreva("\n",A)
-			escreva("\n",B)
-			escreva("\n",D)
-		}	
+		{
+			escreva("\n O número"+n1+" é ímpar")
+		}
+		se (n1<0)
+		{
+			escreva("\n O número "+n1+" é negativo")
+		}
+		senao
+		{
+			escreva("\n O número"+n1+" é positivo")
+		}
 		
 	}
 }
@@ -37,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 608; 
+ * @POSICAO-CURSOR = 501; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
