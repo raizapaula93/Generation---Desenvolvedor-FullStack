@@ -14,14 +14,7 @@ public class Animal { //SUPER CLASSE
 		private String nome;
 		private boolean emitir_som;
 	
-		//METODO CONSTRUTOR
-		public Animal (String nome, int idade, boolean som)
-		{
-			this.nome= nome;
-			this.idade= idade;
-			this.emitir_som= som;
-				
-		}
+
 		//GET AND SET - METODOS "PUBLICOS" -> PODEM SER CHAMADOS POR OUTRAS API'S
 		public int getIdade() {
 			return idade;
@@ -39,6 +32,7 @@ public class Animal { //SUPER CLASSE
 			this.nome = nome;
 		}
 
+					
 		public boolean isEmitir_som() {
 			return emitir_som;
 		}

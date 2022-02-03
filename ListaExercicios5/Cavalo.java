@@ -5,7 +5,7 @@ public class Cavalo extends Animal {
 
 	public Cavalo(String nome, int idade, boolean som, String acao)
 	{
-		super(nome, idade, som);
+		
 		this.acao = acao;
 		
 	}

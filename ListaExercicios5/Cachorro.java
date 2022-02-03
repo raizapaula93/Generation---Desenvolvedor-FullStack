@@ -5,7 +5,7 @@ public class Cachorro extends Animal {
 	
 		public Cachorro(String nome, int idade, boolean som, String acao) 
 		{
-			super(nome, idade, som);
+			
 			this.acao = acao;	
 		}
 						
@@ -16,6 +16,8 @@ public class Cachorro extends Animal {
 		public void setAcao(String acao) {
 			this.acao = acao;
 		}
+		
+		
 		
 		
 			
